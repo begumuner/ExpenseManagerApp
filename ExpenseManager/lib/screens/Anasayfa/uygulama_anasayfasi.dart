@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/Evraklarim/evraklarim_anasayfa.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/ProfilSayfasi/profil_sayfasi.dart';
+import 'package:flutter_firebase_dersleri/screens/Evraklar/evraklarim_anasayfa.dart';
+
 import 'package:flutter_firebase_dersleri/screens/Gelir_Gider/gelirgiderAnasayfa.dart';
 import 'package:flutter_firebase_dersleri/screens/Gelir_Gider/kategori.dart';
 import 'package:flutter_firebase_dersleri/screens/Haberler/haberler.dart';
 import 'package:flutter_firebase_dersleri/screens/Hatirlatici/hatirlatici.dart';
 import 'package:flutter_firebase_dersleri/screens/Hesaplar/hesapListesi.dart';
 import 'package:flutter_firebase_dersleri/screens/Kurlar/anasayfa.dart';
+import 'package:flutter_firebase_dersleri/screens/Profil/profil_sayfasi.dart';
 import 'package:flutter_firebase_dersleri/screens/Raporlar/anasayfa.dart';
 import 'package:flutter_firebase_dersleri/screens/Raporlar/style.dart';
 import 'package:flutter_firebase_dersleri/screens/SoruSayfasi/SoruSayfasi.dart';

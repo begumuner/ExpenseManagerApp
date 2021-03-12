@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/Evraklarim/evraklarim_foto.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/Evraklarim/pdf_picker.dart';
+
 import 'package:flutter_firebase_dersleri/screens/Anasayfa/uygulama_anasayfasi.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import 'evraklarim_foto.dart';
+import 'pdf_picker.dart';
 
 class EvraklarAnaSayfa extends StatefulWidget {
   @override

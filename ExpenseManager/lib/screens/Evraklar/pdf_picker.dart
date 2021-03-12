@@ -6,9 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:advance_pdf_viewer/advance_pdf_viewer.dart';
 import 'package:file_picker/file_picker.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/Evraklarim/DBHelper.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/Evraklarim/evraklarim_anasayfa.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/Evraklarim/pdf_model.dart';
+import 'package:flutter_firebase_dersleri/screens/Evraklar/DBHelper.dart';
+
+import 'evraklarim_anasayfa.dart';
+import 'pdf_model.dart';
 
 class PdfPicker extends StatefulWidget {
   @override

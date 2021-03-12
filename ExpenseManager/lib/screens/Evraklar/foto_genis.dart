@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/Evraklarim/evraklarim_anasayfa.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/Evraklarim/foto_genis.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/Evraklarim/foto_viewer_sayfasi.dart';
+
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 import 'Utility.dart';
@@ -9,17 +7,21 @@ import 'DBHelper.dart';
 import 'Photo.dart';
 import 'dart:async';
 
-class SaveImageDemoSQLite extends StatefulWidget {
+import 'evraklarim_anasayfa.dart';
+import 'evraklarim_foto.dart';
+import 'foto_viewer_sayfasi.dart';
+
+class FotoGenis extends StatefulWidget {
   //
-  SaveImageDemoSQLite() : super();
+  FotoGenis() : super();
 
   final String title = "     Fotoğraf Ekle veya Görüntüle";
 
   @override
-  _SaveImageDemoSQLiteState createState() => _SaveImageDemoSQLiteState();
+  _FotoGenisState createState() => _FotoGenisState();
 }
 
-class _SaveImageDemoSQLiteState extends State<SaveImageDemoSQLite> {
+class _FotoGenisState extends State<FotoGenis> {
   //
   Future<File> imageFile;
   Image image;
@@ -67,10 +69,9 @@ class _SaveImageDemoSQLiteState extends State<SaveImageDemoSQLite> {
     return Padding(
         padding: EdgeInsets.all(5.0),
         child: GridView.builder(
-          scrollDirection: Axis.horizontal,
           itemCount: fotoList.length,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 1,
+            crossAxisCount: 3,
             childAspectRatio: 1,
             mainAxisSpacing: 5.0,
             crossAxisSpacing: 5.0,
@@ -86,15 +87,7 @@ class _SaveImageDemoSQLiteState extends State<SaveImageDemoSQLite> {
               },
               child: Container(
                 decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.blueGrey[100],
-                    width: 3,
-                  ),
-                  borderRadius: BorderRadius.all(
-                      Radius.circular(5.0) //         <--- border radius here
-                      ),
                   image: DecorationImage(
-                    fit: BoxFit.cover,
                     image: FileImage(
                       File(fotoList[index].resimYolu),
                     ),
@@ -123,11 +116,11 @@ class _SaveImageDemoSQLiteState extends State<SaveImageDemoSQLite> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.pushReplacement(
-              context, MaterialPageRoute(builder: (context) => FotoGenis()));
+          Navigator.pushReplacement(context,
+              MaterialPageRoute(builder: (context) => SaveImageDemoSQLite()));
         },
         child: Icon(
-          Icons.grid_on,
+          Icons.open_in_new_rounded,
           color: Colors.black,
         ),
         backgroundColor: Colors.amber,

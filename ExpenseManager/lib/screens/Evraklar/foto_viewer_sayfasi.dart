@@ -1,8 +1,9 @@
 import 'dart:io' as ioo;
 
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/Evraklarim/evraklarim_foto.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:flutter/material.dart';
+
+import 'evraklarim_foto.dart';
 
 class FotoGoruntule extends StatefulWidget {
   final String resims;

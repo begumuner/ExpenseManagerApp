@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/GirisIslemleri/giris_yap.dart';
+
 import 'package:translator/translator.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'Animation/fade_animation.dart';
+import 'giris_yap.dart';
 
 FirebaseAuth _auth = FirebaseAuth.instance;
 String _oAnkiKullaniciId;

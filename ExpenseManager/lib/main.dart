@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/Evraklarim/evraklarim_anasayfa.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/GirisIslemleri/giris_anasayfa.dart';
 
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/ana_sayfa.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/GirisIslemleri/giris_yap.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/ProfilSayfasi/profil_sayfasi.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/GirisIslemleri/sifremi_unuttum_sayfasi.dart';
-
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/GirisIslemleri/uye_ol.dart';
 import 'package:flutter_firebase_dersleri/login_islemleri.dart';
+import 'package:flutter_firebase_dersleri/screens/Giris/giris_anasayfa.dart';
+import 'package:flutter_firebase_dersleri/screens/Giris/giris_yap.dart';
+import 'package:flutter_firebase_dersleri/screens/Giris/sifremi_unuttum_sayfasi.dart';
+import 'package:flutter_firebase_dersleri/screens/Giris/uye_ol.dart';
 import 'package:flutter_firebase_dersleri/screens/Hatirlatici/hatirlatici.dart';
 import 'package:flutter_firebase_dersleri/screens/SoruSayfasi/SoruSayfasi.dart';
 
@@ -62,7 +58,7 @@ class App extends StatelessWidget {
 
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done) {
-          return AddNewMedicine();
+          return GirisAnaSayfa();
         }
 
         // Otherwise, show something whilst waiting for initialization to complete

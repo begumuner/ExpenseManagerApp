@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/GirisIslemleri/giris_yap.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/GirisIslemleri/uye_ol.dart';
+
 import 'package:flutter_firebase_dersleri/screens/Anasayfa/uygulama_anasayfasi.dart';
+import 'package:flutter_firebase_dersleri/screens/Giris/giris_yap.dart';
+import 'package:flutter_firebase_dersleri/screens/Giris/uye_ol.dart';
 import 'package:translator/translator.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:math';

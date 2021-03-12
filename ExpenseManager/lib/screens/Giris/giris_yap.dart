@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/GirisIslemleri/giris_anasayfa.dart';
+
 import 'package:flutter_firebase_dersleri/screens/Anasayfa/uygulama_anasayfasi.dart';
 import 'package:flutter_firebase_dersleri/screens/onBoarding/screen_one.dart';
 
 import 'package:translator/translator.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/ana_sayfa.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/GirisIslemleri/uye_ol.dart';
 
 import 'Animation/fade_animation.dart';
+import 'giris_anasayfa.dart';
 
 FirebaseAuth _auth = FirebaseAuth.instance;
 

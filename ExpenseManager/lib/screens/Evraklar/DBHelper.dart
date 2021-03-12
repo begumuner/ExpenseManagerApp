@@ -1,11 +1,12 @@
 import 'dart:async';
 import 'dart:io' as io;
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/Evraklarim/pdf_model.dart';
+
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
 import 'Photo.dart';
+import 'pdf_model.dart';
 
 class DBHelper {
   static Database _db;

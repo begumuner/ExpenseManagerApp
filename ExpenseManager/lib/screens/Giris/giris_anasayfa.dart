@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/GirisIslemleri/giris_yap.dart';
-import 'package:flutter_firebase_dersleri/bitirmeProjesi/GirisIslemleri/uye_ol.dart';
 
 import 'Animation/fade_animation.dart';
+import 'giris_yap.dart';
+import 'uye_ol.dart';
 
 class GirisAnaSayfa extends StatelessWidget {
   @override
